@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Neighborhood-Watch",
+    "slug": "Neighborhood-Watch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.radu1633.NeighborhoodWatch"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "API_URL": "http://192.168.100.38:8080",
+      "SOCKET_URL": "ws://192.168.100.38:8080/ws",
+      "router": {},
+      "eas": {
+        "projectId": "c7a2f616-4ae9-4d0d-892f-1ed2a344726f"
+      }
+    },
+    "owner": "radu1633"
+  }
+}
