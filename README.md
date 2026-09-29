@@ -63,5 +63,4 @@ Bachelor's thesis project, designed and built entirely by me, from the data mode
 - **Security:** JWT authentication with Spring Security, a token blacklist on logout, and two roles (resident and neighborhood admin).
 - **Mobile app:** Expo / React Native app with sign-up and neighborhood verification, an incident feed, reports with photos or videos and an anonymous option, comments, chat, emergency contacts, notifications and profiles.
 
-**[TODO: solo or team project? If team: size and what you built]**
 
