@@ -64,3 +64,17 @@ Bachelor's thesis project, designed and built entirely by me, from the data mode
 - **Mobile app:** Expo / React Native app with sign-up and neighborhood verification, an incident feed, reports with photos or videos and an anonymous option, comments, chat, emergency contacts, notifications and profiles.
 
 
+
+## Configuration
+
+The API reads its credentials from environment variables (defaults are for local development only):
+
+| Variable | Used for | Default |
+|---|---|---|
+| `DB_USERNAME` | PostgreSQL user | `postgres` |
+| `DB_PASSWORD` | PostgreSQL password | `postgres` |
+| `JWT_SECRET` | Signing key for JWT tokens (required, no default) | – |
+
+Example (PowerShell): `$env:JWT_SECRET = "<long random string>"; ./mvnw spring-boot:run`
+
+Uploaded media is stored under `neighborhood-watch-api/uploads/`, which is ignored by git.
